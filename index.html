@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="top-bar" class="top-bar">
+            <div class="top-left">
+                <a href="#"><img class="logo" src="./img/googlelogo.png" alt="Google logo"></a>
+            <div id="searchbar-div" class="searchbar-div">
+                <input id="searchbar" class="searchbar" type="text" oninput="xBtnVisibility()">
+                <button id="x-btn" class="x" onclick="clearInput()">X</button>
+                <div class="mag-glass">
+                    <svg class="mag-svg" focusable="false" viewBox="0 0 24 24">
+                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                    </svg>
+                </div>
+            </div>
+            </div>
+            
+            <div class="top-right">
+                <a href="#">
+                    <img class="nine-dot" src="./img/9-dots.png" alt="Nine dot menu">
+                </a>
+                <a href="#">
+                    <img class="user-circle" src="./img/d-name.png" alt="User Initial">
+                </a>
+            </div>
+        </div>
+    </header>
+</body>
