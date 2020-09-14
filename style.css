@@ -1,5 +1,14 @@
 body {
     margin: 0;
+    font-family: 'Arimo', sans-serif;
+}
+
+header {
+    border-bottom: 1px solid #ebebeb;
+}
+
+button {
+    font-family: 'Arimo', sans-serif;
 }
 
 .top-bar {
@@ -66,9 +75,17 @@ button.x {
     border: none;
     visibility: hidden;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: monospace;
+    color: #888888;
+    font-size: 14px;
+    height: 24px;
+
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.x svg {
+    height: 24px;
+    width: auto;
 }
 
 .top-right {
@@ -89,3 +106,44 @@ button.x {
 .user-circle {
     border-radius: 50%;
 }
+
+.nav-links {
+    display: flex;
+    height: 52px;
+    align-items: flex-end;
+
+    font-size: 14px;
+}
+
+.categories {
+    display: flex;
+    margin-left: 169px;
+}
+
+.nav-links a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #5f6368;
+    font-size: small;
+    padding: 12px;
+}
+
+.categories a:active {
+    padding-bottom: 9px;
+    border-bottom: 3px solid #1a73e8;
+    color: #1a73e8;
+}
+
+.nav-links a img, .nav-links a span {
+    display: inline-block;
+}
+
+.nav-icon {
+    width: 18px;
+    height: auto;
+    margin-right: 5px;
+}
+
