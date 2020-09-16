@@ -3,7 +3,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@200;300;400;700;900&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <script src="script.js"></script>
+    
 </head>
 
 <body>
@@ -12,7 +12,7 @@
             <div class="top-left">
                 <a href="#"><img class="logo" src="./img/googlelogo.png" alt="Google logo"></a>
             <div id="searchbar-div" class="searchbar-div">
-                <input id="searchbar" class="searchbar" type="text" oninput="xBtnVisibility()">
+                <input id="searchbar" class="searchbar" type="text" value="build this webpage" oninput="xBtnVisibility()">
                 <button id="x-btn" class="x" onclick="clearInput()">
                     <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
@@ -92,7 +92,10 @@
                 <span class="breadcrumbs">youtube > watch</span>
                 <a href="#"><h2 class="page-title">Back to the Future - Quotes</h2></a>
                 <div class="description description-box">
-                    <img class="thumbnail" src="./img/doc.jpg" alt="Doc from Back to the Future">
+                    <a class="thumbnail-box" href="#">
+                        <img class="thumbnail" src="./img/doc.jpg" alt="Doc from Back to the Future">
+                        <div class="play-button"></div>
+                    </a>
                     <p class="description">Believe me, Marty, you're better off not having to worry about all the aggravation and headaches of playing at that dance. I'm sorry, Mr. McFly, I mean, I was just starting on the second coat. Is she pretty? Doc, Doc. Oh, no.</p>
                 </div>
             </div>
@@ -254,7 +257,7 @@
                 </div>
 
                 <div class="tab-box">
-                    <input class="tab-check" type="checkbox" id="cards2" checked>
+                    <input class="tab-check" type="checkbox" id="cards2">
                     <label class="tab-label" for="cards2">How about a different order?</label>
                     <div class="tab-collapse">
                         <div class="tab-content">
@@ -326,7 +329,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="feedback"><em>Feedback</em></div>
             </div>
+            
 
             <div class="people-ask related-searches">
                 <h2>Searches related to Back to the Future quotes</h2>
@@ -346,8 +351,47 @@
                 </div>
             </div>
 
+            <div class="pages">
+                <div class="pages-logo">
+                    <img class="goooogle" src="img/Goooogle.png">
+                </div>
+                <a class="page-num one">1</a>
+                <a class="page-num" href="#">2</a>
+                <a class="page-num" href="#">3</a>
+                <a class="page-num" href="#">4</a>
+                <a class="page-num" href="#">5</a>
+                <a class="page-num" href="#">6</a>
+                <a class="page-num" href="#">7</a>
+                <a class="page-num" href="#">8</a>
+                <a class="page-num" href="#">9</a>
+                <a class="page-num" href="#">10</a>
+                <a class="next" href="#">Next</a>
+            </div>
+
         </div>
 
         
     </div>
+
+    <footer>
+        <div class="location">
+            <div class="dot"></div>
+            <div class="current-loc">North Nowhere, Codumbus, GA</div>
+            <span> - </span>
+            <a href="#">From your places (Home)</a>
+            <span> - </span>
+            <a href="#">Use precise location</a>
+            <span> - </span>
+            <a href="#">Learn more</a>
+        </div>
+
+        <div class="footer-links">
+            <a href="#">Help</a>
+            <a href="#">Send Feedback</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+    </footer>
 </body>
+
+<script src="script.js"></script>

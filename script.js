@@ -26,3 +26,5 @@ function navLinkSelect(e) {
 
     e.classList.add("current");
 }
+
+xBtnVisibility();
